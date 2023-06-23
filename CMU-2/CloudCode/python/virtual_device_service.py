@@ -9,16 +9,6 @@ import grpc
 import iot_service_pb2
 import iot_service_pb2_grpc
 
-# Twin state
-current_temperature = 'void'
-current_light_level = 'void'
-led_state = {'red':0, 'green':0}
-
-kafka_bootstrap_servers = "localhost:9092"
-kafka_topic = "seu_topico"
-kafka_username = "user"
-kafka_password = "senha"
-
 def authenticate_user(username, password):
     valid_users = {
         "user": "senha",
